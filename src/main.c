@@ -8,7 +8,7 @@
 #define LED_PIN_GREEN GPIO_NUM_5
 #define LED_PIN_BLUE GPIO_NUM_6
 
-#define LED_FREQ_RED 250
+#define LED_FREQ_RED 200
 #define LED_FREQ_GREEN 500
 #define LED_FREQ_BLUE 1000
 
