@@ -92,9 +92,9 @@ void blink_many(led_sequence_config* config)
     }
 }
 
-void init(led_sequence_config* config, uint8_t longevity) 
+void init(led_sequence_config* config) 
 {
-    for (uint8_t i = 0; i < longevity; i++)
+    for (uint8_t i = 0; i < config->longevity; i++)
     {
         gpio_config(config->leds[i]->gpio_config);
     }
@@ -102,7 +102,7 @@ void init(led_sequence_config* config, uint8_t longevity)
 
 void app_main() 
 {
-    init(&config, LED_SEQUENCE_LONGEVITY);
+    init(&config);
     
     while (1)
     {
